@@ -4,8 +4,7 @@ on:
   workflow_dispatch: # 這一行可以讓您手動觸發此流程，方便測試
   schedule:
     # 使用 cron 語法設定排程
-    # 這個範例是設定在每天的 UTC 時間 0 點 0 分執行
-    - cron: '5 * * * *'
+    - cron: '0-59/5 * * * *'
 
   jobs:
   build:
